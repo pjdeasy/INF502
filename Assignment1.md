@@ -48,6 +48,7 @@ Pauls-MacBook-Pro:handson pauldeasy$ git commit
 and (ii) change to this branch
 
 ```
+Pauls-MacBook-Pro:handson pauldeasy$ git checkout master
 Pauls-MacBook-Pro:handson pauldeasy$ git branch math
 Pauls-MacBook-Pro:handson pauldeasy$ git checkout math
 ```
@@ -61,7 +62,8 @@ print 2+2
 
 7. Write a command (or sequence) to commit your changes
 ```
-Pauls-MacBook-Pro:handson pauldeasy$ git commit -a -m "New B.py file"
+Pauls-MacBook-Pro:handson pauldeasy$ git add B.py
+Pauls-MacBook-Pro:handson pauldeasy$ git commit -m "New B.py file, added two lines"
 
 ```
 
@@ -95,29 +97,17 @@ Pauls-MacBook-Pro:handson pauldeasy$ git merge --abort
 
 12. Write a command (or set of commands) to proceed with the merge and make `master` branch up-to-date
 ```
-
+Pauls-MacBook-Pro:handson pauldeasy$ git checkout master
+Pauls-MacBook-Pro:handson pauldeasy$ git merge math
+Pauls-MacBook-Pro:handson pauldeasy$ git rebase
 
 ```
 
 ### Part 2: Using GitHub
 
-The goal of this assignment is to put you in touch with the fork-pullrequest process, with an extra of dealing a little bit with Markdown. To learn more about Markdown [click here](https://guides.github.com/features/mastering-markdown/).
-
-**You must fork this repo and submit a pull request back**
-
-1. Into the students folder, create a file called LASTNAME_FIRSTNAME.md (please change LASTNAME_FIRSTNAME for your actual last and first names). 
-2. Use Markdown to structure the following information about the last paper you've read (you can structure your markdown the way you want):
-- Title
-- Venue (journal name/conference)
-- Number of pages
-- 3 outcomes of the paper
-- link to the paper online
-
-3. Send your file back to this repository until creating a pull request (your pull request needs to appear [here](https://github.com/igorsteinmacher/CS502-Fall2019/pulls)).
-
 4. Report your experience of making this submission, including the steps followed, commands used, and hurdles faced (within the file you created for the **Part 1**.
 ```
-
+Early on I accidentally pushed the data and overwrote my files, which led to a lot of confusion. I primarily went through the lecture slides to follow each step.
 
 ```
 
