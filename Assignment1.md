@@ -8,7 +8,7 @@
 ``` 
      ->F2			
     / 
-	F1-->F3
+   F1-->F3
 ```		
 
 2. Try `git log --graph --all` to see the commit tree. What do you see?
