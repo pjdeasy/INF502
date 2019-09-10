@@ -22,6 +22,7 @@ I see 3 commits. The initial commit to add a draft of A.py, “adding some more 
    Summarize the difference from master to the other branch.
 
 ```
+
 The branch has added python code to print ‘That was easy bud’ if two numbers are summed, and ‘subtraction’ if we subtract the 2nd number from the 1st number. Otherwise, the calculation will print ‘My knowledge is limited’
 
 ```
@@ -81,8 +82,8 @@ Because we changed the same code of the master twice, we cannot merge the branch
 ```
    
 10. Write a set of commands to abort the merge
-```Pauls-MacBook-Pro:handson pauldeasy$ git merge --abort
-
+```
+Pauls-MacBook-Pro:handson pauldeasy$ git merge --abort
 
 ```
    
