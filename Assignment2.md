@@ -22,9 +22,26 @@ def list_mangler(list_in):
 list_mangler([1, 2, 3, 4])
 
 ##########################################################################
+
+
+##########################################################################
+
+def odd_even_filter(nbrs):
+    even = []
+    odd = []
+    for i in nbrs:
+        if i % 2 == 0:
+            even.append(i)
+        else:
+            odd.append(i)
+    return [even, odd]
+
+odd_even_filter([1, 2, 3, 4, 5, 6, 7, 8, 9])
+
+#############################################################################
 def grade_calc(grades_in, to_drop):
     grades_in= []
-    n = to_drop
+    to_drop = to_drop
     for i in sorted(grade_calc):
         grades_in.remove[0:n]
     return grades_in
@@ -32,3 +49,15 @@ def grade_calc(grades_in, to_drop):
 grade_calc([100,90,80],2)
 
 score = (sum(grades_in) - min(grades_in)) / (len(grades_in) - to_drop)
+
+def determinGrade (avgScore):
+    if ( avgScore <60 ):
+        return "F"
+    elif( avgScore <70 ):
+        return "D"
+    elif( avgScore <80 ):
+        return "C"
+    elif( avgScore <90 ):
+        return "B"
+    elif( avgScore <101 ):
+        return "A"
