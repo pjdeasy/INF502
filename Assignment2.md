@@ -23,6 +23,20 @@ list_mangler([1, 2, 3, 4])
 
 ##########################################################################
 
+def grade_calc(grades_in,to_drop):
+    to_drop=to_drop
+    grade_calc_lst = sorted(grades_in)[to_drop:]
+    grades_in=sum(grade_calc_lst) / len(grade_calc_lst)
+    if ( grades_in <60 ):
+        print('F')
+    elif( grades_in <70 ):
+        print('D')
+    elif( grades_in <80 ):
+        print('C')
+    elif( grades_in <90 ):
+        print('B')
+    elif( grades_in <101 ):
+        print('A')
 
 ##########################################################################
 
@@ -39,25 +53,3 @@ def odd_even_filter(nbrs):
 odd_even_filter([1, 2, 3, 4, 5, 6, 7, 8, 9])
 
 #############################################################################
-def grade_calc(grades_in, to_drop):
-    grades_in= []
-    to_drop = to_drop
-    for i in sorted(grade_calc):
-        grades_in.remove[0:n]
-    return grades_in
-
-grade_calc([100,90,80],2)
-
-score = (sum(grades_in) - min(grades_in)) / (len(grades_in) - to_drop)
-
-def determinGrade (avgScore):
-    if ( avgScore <60 ):
-        return "F"
-    elif( avgScore <70 ):
-        return "D"
-    elif( avgScore <80 ):
-        return "C"
-    elif( avgScore <90 ):
-        return "B"
-    elif( avgScore <101 ):
-        return "A"
