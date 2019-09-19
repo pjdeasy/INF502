@@ -48,6 +48,7 @@ For example:
 Present a short (no more than a couple of sentences) description of your solution approach. Show your source code and the output of three example runs.
 ##########################################################################
 *Answer
+I created nbr for the user to input a list of numbers. The number%2 provides the remainder of the input after dividing by 2 and multiplies the number by 2 if there is no remainder, or by 3 if there is a remainder.
 
 def list_mangler(list_in):
     nbr=[]
@@ -81,6 +82,8 @@ For example:
 Present a short (no more than a couple of sentences) description of your solution approach. Then show your source code and the  output of three example runs.
 
 ##########################################################################
+*Answer
+I sorted the grades_in and then removed the minimum numbers of the sorted list, depending on the integer inputed as to_drop.  Then, I created the equation for the average grade and set it to print the appropriate letter grade based on the calculated average after the minimum grades are dropped.
 
 def grade_calc(grades_in,to_drop):
     to_drop=to_drop
@@ -96,6 +99,13 @@ def grade_calc(grades_in,to_drop):
         print('B')
     elif( grades_in <101 ):
         print('A')
+        
+grade_calc([100,90,85,15,50], 2)
+A
+grade_calc([100,90,85,15,50], 1)
+B
+grade_calc([90,80,70,60,50], 1)
+C
 
 ##########################################################################
 
@@ -114,9 +124,9 @@ For example:
 ```
 Present a short (no more than a couple of sentences) description of your solution approach. Then show your source code and the interactive shell output of three example runs.
 
-
 #############################################################################
 *Answer:
+I created even and odd numbers as lists, if the remainder after dividing the inputted number by 2 is 0 then the number gets added into the first bucket. If the remained is not 0 then the number gets placed in the 2nd bucket.
 
 def odd_even_filter(nbrs):
     even = []
@@ -129,5 +139,9 @@ def odd_even_filter(nbrs):
     return [even, odd]
 
 odd_even_filter([1, 2, 3, 4, 5, 6, 7, 8, 9])
-
+[[2, 4, 6, 8], [1, 3, 5, 7, 9]]
+odd_even_filter([100, 5000, 2, 89])
+[[100, 5000, 2], [89]]
+odd_even_filter([90, 85, 80, 60, 49])
+[[90, 80, 60], [85, 49]]
 #############################################################################
