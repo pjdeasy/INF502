@@ -16,6 +16,7 @@ Please try to think about different functions to complete your work
 
 ###########################################################################################
 ## Answer1:
+#
 
 wallet1=int(input("Please enter wallet 1 amount: "))
 wallet2=int(input("Please enter wallet 2 amount: "))
@@ -32,6 +33,8 @@ sumwallet=sum(wallets)
 print('All together, these wallets have $' + str(sumwallet) + ' in them')
 dimewallet=sum(wallets)*10
 print('All together, the total value of these wallets is worth ' + str(dimewallet) + " dimes")
+
+#
 
 ###########################################################################################
 
@@ -52,7 +55,7 @@ Provide a menu of options for users (inputing numbers) to:
 **You can provide a pre-populated dictionary as part of your program, avoiding the need of typing every time**
 ###########################################################################################
 ## Answer2:
-
+#
 elem_dict = {
     "H": ["Hydrogen", 1, 1, 1],
     "He": ["Helium", 2, 1, 18],
@@ -182,7 +185,6 @@ def viewElement(element):
     print("\n")
 
 if __name__ == "__main__":
-   # elem_dict = {}
     while 1:
         print("\n Main Menu \n")
         print("1. See info of an Element")
