@@ -15,7 +15,7 @@ When finished, your application should provide the following information:
 Please try to think about different functions to complete your work
 
 ###########################################################################################
-##Answer1:
+## Answer1:
 
 wallet1=int(input("Please enter wallet 1 amount: "))
 wallet2=int(input("Please enter wallet 2 amount: "))
